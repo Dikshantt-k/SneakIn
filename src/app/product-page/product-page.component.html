@@ -1,0 +1,83 @@
+<div class="container justify-content-center " *ngIf="product">
+  <div class="row justify-content-center">
+    <div class="col-md justify-content-between">
+
+
+      <div class="d-flex justify-content-center  mt-5 mb-5" *ngIf="product">
+
+        <div class="about-product text-center  "><img src="{{product.url}}" height="" width="500">
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md">
+
+
+      <div class="d-flex  container mt-5" *ngIf="product">
+        <div class=" p-3 bg-white">
+          <div class="about-product  justify-content-start mt-2">
+            <div>
+              <h4>{{product.name}}</h4>
+              <h6 class="mt-0 text-black-50">{{product.category}}'s shoes</h6>
+            </div>
+          </div>
+          <div class="stats mt-3 mb-3">
+            <div class="d-flex justify-content-between p-price">
+              <h4><span>MRP : </span><span>₹{{product.price}}</span></h4>
+
+            </div>
+
+          </div>
+          <div class="tax ">
+            <h6>Inclusive of all taxes</h6>
+            <h6>(Also includes all applicable duties)</h6>
+          </div>
+
+
+          <div class="d-flex justify-content-between total font-weight-bold mt-4"><span></span><span> </span></div>
+
+        </div>
+      </div>
+
+     {{size}}
+      <div class="container chart">
+        <div style="padding-left: 5px;"><h6>Select size</h6></div>
+
+        <button  class="btn btn-light size myButton " (click)="shoeSize(2)"id="myButton"  >2</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(2.5)"  id="myButton">2.5</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(3)"  id="myButton">3</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(3.5)"  id="myButton">3.5</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(4)"  id="myButton">4</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(4.5)"  id="myButton">4.5</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(5)"  id="myButton">5</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(5.5)"  id="myButton">5.5</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(6)"  id="myButton">6</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(6.5)"  id="myButton">6.5</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(7)"  id="myButton">7</button> 
+        <button class="btn btn-light size myButton" (click)="shoeSize(7.5)"  id="myButton">7.5</button> 
+
+        <div class="cart" >
+          <button class="btn btn-dark btn-rounded" *ngIf="!this.size" disabled (mouseover)="erroralert()" >Add to cart</button>
+          <button class="btn btn-dark btn-rounded" *ngIf="this.size" (click)="addProductTocart(product.id)">Add to cart</button>
+        </div>
+
+      </div>
+   
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+  </div>

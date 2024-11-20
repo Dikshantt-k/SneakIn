@@ -1,0 +1,109 @@
+{
+  "users": [
+    {
+      "id": "5c7b",
+      "name": "yash",
+      "userName": "yash",
+      "email": "dikshant@gmail.com",
+      "password": "yash",
+      "cartItem": []
+    }
+  ],
+  "cartItem": [
+    {
+      "id": "1b51",
+      "productId": "6835",
+      "productName": "Nike White shoe",
+      "productPrice": "1000",
+      "productCategory": "Men",
+      "productUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fd4a337e-51cf-46d1-9ef4-e2d41463c12d/AIR+FORCE+1+%2707+FRESH.png",
+      "productSize": 3
+    },
+    {
+      "id": "ba60",
+      "productId": "6835",
+      "productName": "Nike White shoe",
+      "productPrice": "1000",
+      "productCategory": "Men",
+      "productUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fd4a337e-51cf-46d1-9ef4-e2d41463c12d/AIR+FORCE+1+%2707+FRESH.png",
+      "productSize": 3
+    },
+    {
+      "id": "3e03",
+      "productId": "6835",
+      "productName": "Nike White shoe",
+      "productPrice": "1000",
+      "productCategory": "Men",
+      "productUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fd4a337e-51cf-46d1-9ef4-e2d41463c12d/AIR+FORCE+1+%2707+FRESH.png",
+      "productSize": 3.5
+    },
+    {
+      "id": "9eea",
+      "coustomerId": "5c7b",
+      "productId": "4776",
+      "productName": "Nike Dunk Low retro",
+      "productPrice": "3500",
+      "productCategory": "Men",
+      "productUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b62ad0c4-ae84-4e35-9ec4-361c5973107f/AIR+JORDAN+LEGACY+312+LOW.png",
+      "productSize": 7.5
+    }
+  ],
+  "products": [
+    {
+      "name": "Nike red shoes",
+      "price": "1500",
+      "category": "Men",
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cce5b5b3-34ee-408b-947f-be2950972b92/JORDAN+TATUM+2+PF.png",
+      "id": "67e3"
+    },
+    {
+      "name": "NIke blew",
+      "price": "4500",
+      "category": "Men",
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c005f0ca-249c-4fec-b60e-96f98c8b7c61/JORDAN+TATUM+2+PF.png",
+      "id": "b7be"
+    },
+    {
+      "name": "Nike Dunk Low retro",
+      "price": "3500",
+      "category": "Men",
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b62ad0c4-ae84-4e35-9ec4-361c5973107f/AIR+JORDAN+LEGACY+312+LOW.png",
+      "id": "4776"
+    },
+    {
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fd4a337e-51cf-46d1-9ef4-e2d41463c12d/AIR+FORCE+1+%2707+FRESH.png",
+      "price": "1000",
+      "name": "Nike White shoe",
+      "category": "Men",
+      "id": "6835"
+    },
+    {
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/057482ba-4077-40a4-aa18-ef8f1b8f4fcf/BLAZER+MID+%2777+VNTG.png",
+      "name": "nike blazer",
+      "price": "1200",
+      "category": "Men",
+      "id": "1f88"
+    },
+    {
+      "name": "Nike Green Blaze",
+      "price": "7500",
+      "category": "Men",
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/68e31b88-19a5-435f-acc1-172b67e2f927/BLAZER+MID+%2777+PRM.png",
+      "id": "bade"
+    },
+    {
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0029ebe4-0ea3-4d8b-9e0d-b13ffa466165/NIKE+SB+ZOOM+BLAZER+MID.png",
+      "name": "Nike Go FlyEasy",
+      "price": "9000",
+      "category": "Women",
+      "id": "ff7b"
+    },
+    {
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e039906f-d10e-49d2-a729-d2d55f0ebc97/NIKE+SB+ZOOM+BLAZER+LOW+PRO+GT.png",
+      "price": "4500",
+      "name": "Nike SB chron",
+      "category": "Women",
+      "id": "8824"
+    }
+  ]
+}

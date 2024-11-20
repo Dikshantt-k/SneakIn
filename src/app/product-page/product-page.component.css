@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+img{
+    border-radius: 1%;
+}
+.tax{
+    font-size: 14px;
+}
+.stats{
+    font-size: 16px;
+}
+
+.chart{
+    width: 450px;
+    margin: 10px;
+
+}
+.size{
+    background-color: rgba(223, 234, 234, 0.802);
+    width: 90px;
+    margin:5px;
+}
+.cart{
+
+    margin: 5px;
+}
+.btn-rounded{
+    width: 92%;
+    border-radius: 50px;
+    margin-top: 25px;
+    padding: 13px;
+}
+.myButton{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.myButton:focus{
+background-color: rgb(154, 189, 189);
+}
+

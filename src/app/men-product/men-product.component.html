@@ -1,0 +1,17 @@
+<div class="container-fluid ">
+    <div class="row "  >
+      <div class="col-md-2 mx-3 my-2 " *ngFor="let p of menp;let i =index">
+       <a [routerLink]="['product', p.id]" class="card-link text-decoration-none">
+        <div class="card">
+          <img class="card-img-top" src="{{p.url}}" alt="Title" />
+          <div class="card-body">
+            <h6 class="card-title" style="font-size: 16px;">{{p.name}}</h6>
+            <p class="card-text">₹ {{p.price}}</p>
+            
+            
+          </div>
+        </div>
+      </a> 
+      </div>
+    </div>
+  </div>

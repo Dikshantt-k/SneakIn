@@ -1,0 +1,69 @@
+
+  .borderless-btn{
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+
+  }
+.borderless-btn:hover,
+.borderless-btn:focus {
+  border: none;
+  box-shadow: none; /* Ensures no border on hover or focus */
+}
+  .dropdown-menu {
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 200px; 
+    overflow-y: auto;
+  }
+
+  .center-nav {
+    display: flex;
+    justify-content: center;
+     /* Ensures it takes up the available space */
+  }
+
+ 
+
+  .active{
+    color: blue;
+    font-weight: bold;
+  }
+
+.icon{
+  padding: 20%;
+  width: 40px;
+  height: 40px;
+  font-size:20px;
+  color: rgb(17, 14, 14);
+  opacity: 80%;
+  margin-top: 5px;
+
+}
+.text{
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+.btn{
+ 
+  border-radius: 25px;
+}
+.cartItem{
+  display: flex;
+  justify-content: end;
+}
+.navbar{
+  padding: 0%;
+}
+.dropdown{
+margin-top: 5%;
+}
+.login{
+  margin-top: 16px;
+  text-align: center;
+  text-decoration: none;
+  color:rgb(17, 14, 14) ;
+}
+.navbar-collapse{
+  margin-left: 41%;
+} 
