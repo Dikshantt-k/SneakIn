@@ -21,6 +21,7 @@ export class MainpageComponent implements OnInit {
   currentUser:any={}
   product:any={}
   products:any[]=[];
+  randomProducts:any[]=[]
   cartItems:any[]=[]
   cartProducts:any[]=[]
   
@@ -39,8 +40,8 @@ export class MainpageComponent implements OnInit {
       this.dbService.getProoduct().subscribe(x=>this.products=x);
       this.t=localStorage.getItem('user')
       this.t=JSON.parse(this.t)
-
-
+      
+  
       this.userService.getUser().subscribe(user=>{
         this.user=user.find((x:any)=>x.id==this.t?.id);
       })
@@ -58,6 +59,8 @@ export class MainpageComponent implements OnInit {
       // })
   } 
 
+
+
   saveProduct(){
     return this.dbService.postProduct(this.product).subscribe(x=> {this.ngOnInit()
   this.product={}})
@@ -66,7 +69,7 @@ export class MainpageComponent implements OnInit {
   deleteProduct(id:any){
     return this.dbService.deleteProduct(id).subscribe(x=> this.ngOnInit())
   }
- 
+
   // addtocart(id:any,i:any){
   //   this.id=id
   //   this.cartProduct.push(this.products[i]);

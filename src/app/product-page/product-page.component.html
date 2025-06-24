@@ -3,6 +3,7 @@
     <div class="col-md justify-content-between">
 
 
+
       <div class="d-flex justify-content-center  mt-5 mb-5" *ngIf="product">
 
         <div class="about-product text-center  "><img src="{{product.url}}" height="" width="500">
@@ -15,7 +16,6 @@
 
 
     <div class="col-md">
-
 
       <div class="d-flex  container mt-5" *ngIf="product">
         <div class=" p-3 bg-white">
@@ -43,41 +43,94 @@
         </div>
       </div>
 
-     {{size}}
+
       <div class="container chart">
-        <div style="padding-left: 5px;"><h6>Select size</h6></div>
+        <div style="padding-left: 5px;">
+          <h6>Select size</h6>
+        </div>
 
-        <button  class="btn btn-light size myButton " (click)="shoeSize(2)"id="myButton"  >2</button>
-        <button class="btn btn-light size myButton" (click)="shoeSize(2.5)"  id="myButton">2.5</button>
-        <button class="btn btn-light size myButton" (click)="shoeSize(3)"  id="myButton">3</button>
-        <button class="btn btn-light size myButton" (click)="shoeSize(3.5)"  id="myButton">3.5</button>
-        <button class="btn btn-light size myButton" (click)="shoeSize(4)"  id="myButton">4</button>
-        <button class="btn btn-light size myButton" (click)="shoeSize(4.5)"  id="myButton">4.5</button>
-        <button class="btn btn-light size myButton" (click)="shoeSize(5)"  id="myButton">5</button>
-        <button class="btn btn-light size myButton" (click)="shoeSize(5.5)"  id="myButton">5.5</button>
-        <button class="btn btn-light size myButton" (click)="shoeSize(6)"  id="myButton">6</button>
-        <button class="btn btn-light size myButton" (click)="shoeSize(6.5)"  id="myButton">6.5</button>
-        <button class="btn btn-light size myButton" (click)="shoeSize(7)"  id="myButton">7</button> 
-        <button class="btn btn-light size myButton" (click)="shoeSize(7.5)"  id="myButton">7.5</button> 
+        <button class="btn btn-light size myButton " (click)="shoeSize(2)" id="myButton">2</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(2.5)" id="myButton">2.5</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(3)" id="myButton">3</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(3.5)" id="myButton">3.5</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(4)" id="myButton">4</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(4.5)" id="myButton">4.5</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(5)" id="myButton">5</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(5.5)" id="myButton">5.5</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(6)" id="myButton">6</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(6.5)" id="myButton">6.5</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(7)" id="myButton">7</button>
+        <button class="btn btn-light size myButton" (click)="shoeSize(7.5)" id="myButton">7.5</button>
 
-        <div class="cart" >
-          <button class="btn btn-dark btn-rounded" *ngIf="!this.size" disabled (mouseover)="erroralert()" >Add to cart</button>
-          <button class="btn btn-dark btn-rounded" *ngIf="this.size" (click)="addProductTocart(product.id)">Add to cart</button>
+        <div class="cart">
+          <button class="btn btn-dark btn-rounded" *ngIf="!this.size" disabled (mouseover)="erroralert()">Add to
+            cart</button>
+          <button class="btn btn-dark btn-rounded" *ngIf="this.size" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="addProductTocart(product.id)">Add to
+            cart</button>
+
+
+
+
+
+
+
+          <!-- Button trigger modal -->
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header"style="border: none;">
+                  <h5 class="modal-title" id="exampleModalLabel">Added to cart</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" *ngIf="product">
+                  <div class=" mb-3 " style="max-width: 540px;">
+                    <div class="row g-0  ">
+                      <div class="col-4 col-sm-4 col-md-4" >
+                        <img src="{{product.url}}" class="img-fluid " alt="...">
+                        {{product.url}}
+                        {{product.name}}
+                      </div>
+                      <div class="col-8 col-sm-8 col-md-8" >
+                        <div class="card-body " style="margin-left: 5%;">
+                          <h5 class="card-title">{{product.name}}</h5>
+                          
+                          <h6 class="mt-0 text-black-50">{{product.category}}'s shoes</h6>
+                          <p class="card-text">₹ {{product.price}}</p>
+          
+                          <p class="card-text"><small class="text-body-secondary">Size :{{ modalSize }}</small></p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="modal-footer" style="border: none;">
+                  <button type="button" class="btn btn-dark btn-rounded" data-bs-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
-   
 
 
-
-      </div>
 
 
     </div>
 
 
-
-
-
-
   </div>
+
+
+
+
+
+
+</div>

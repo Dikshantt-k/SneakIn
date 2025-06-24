@@ -2,6 +2,7 @@
     <div class="row">
         <div class="col-md">
             <h1>Add Product</h1>
+            {{id}}
             {{product|json}}
         </div>
     </div>
@@ -29,6 +30,7 @@
     </div>
     <div class="row">
         <div class="col-md">
+            <label for="">category</label>
             <div class="dropdown">
 
 
@@ -36,11 +38,17 @@
                     <option value="" disabled selected>Select a category</option>
                     <option value="Men">Men</option>
                     <option value="Women">Women</option>
+                    <option value="Unisex">Unisex</option>
+                    <option value="Football">Football</option>
+                    <option value="BaskateBall">BaskateBall</option>
+                    <option value="Skateboard">Skateboards</option>
+
                 </select>
             </div>
         </div>
     </div>
 
+    
 
     <div class="row">
         <div class="col-md">
@@ -61,6 +69,7 @@
             <tr>
 
                 <th scope="col">Name</th>
+                <th scope="col">id</th>
                 <th scope="col">Price</th>
                 <th scope="col">Url</th>
                 <th scope="col">Category</th>
@@ -72,12 +81,13 @@
         <tbody>
             <tr class="" *ngFor="let p of products;let i= index">
                 <td scope="row">{{p.name}}</td>
+                <td >{{p._id}}</td>
                 <td>{{p.price}}</td>
                 <td>{{p.url}}</td>
                 <td>{{p.category}}</td>
                 <td>
-                    <button class="btn btn-warning" (click)="editProduct(p.id,i)">Edit</button>
-                    <button class="btn btn-warning" (click)="deleteProduct(p.id)">delete</button>
+                    <button class="btn btn-warning" (click)="editProduct(p._id,i)">Edit</button>
+                    <button class="btn btn-warning" (click)="deleteProduct(p._id)">delete</button>
 
                 </td>
 

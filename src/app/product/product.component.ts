@@ -24,6 +24,8 @@ export class ProductComponent implements OnInit{
   }
 
   deleteProduct(id:any){
+    let i:any=id
+    console.log(i)
     return this.dbService.deleteProduct(id).subscribe(x=> this.ngOnInit())
   }
 

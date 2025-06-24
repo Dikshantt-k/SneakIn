@@ -5,14 +5,15 @@
 
     
       <div class="row justify-content-center" *ngFor="let product of cartItems">
-        <div class=" mb-3" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
+        <div class=" mb-3 " style="max-width: 540px;">
+          <div class="row g-0  ">
+            <div class="col-4 col-sm-4 col-md-4">
               <img src="{{product.productUrl}}" class="img-fluid " alt="...">
             </div>
-            <div class="col-md-8">
+            <div class="col-8 col-sm-8 col-md-8">
               <div class="card-body">
                 <h5 class="card-title">{{product.productName}}</h5>
+                
                 <h6 class="mt-0 text-black-50">{{product.productCategory}}'s shoes</h6>
                 <p class="card-text">₹ {{product.productPrice}}</p>
 
@@ -31,8 +32,13 @@
       <div class="summary justify-content-end">
         <h1>Summary</h1>
 
-        <span>Total =</span><span>{{total}}</span>
-        <h6>Total = ₹ {{total}}</h6>
+      
+        <div class="d-flex justify-content-between p-price"><span>Subtotal</span><span>₹ {{subtotal}}</span></div>
+        <div class="d-flex justify-content-between p-price"><span>Estimated Delivery & Handling</span><span>₹ 450</span></div>
+        <hr>
+        <div class="d-flex justify-content-between p-price"><span>Total</span><span>₹ {{total}}</span></div>
+
+        <hr>
         <div >
           <button class="btn btn-dark btn-checkout" (click)="payWithRazor()">Checkout</button>
         </div>

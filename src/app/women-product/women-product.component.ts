@@ -20,7 +20,7 @@ export class WomenProductComponent implements OnInit{
   ngOnInit(): void {
       this.dbService.getProoduct().subscribe((x)=>{
         this.products=x;
-        this.womenp=this.products.filter((x)=>x.category === 'Women')
+        this.womenp=this.products.filter((x)=>x.category !== 'Men')
 
       })
   }

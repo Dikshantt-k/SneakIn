@@ -17,7 +17,8 @@ export class MenProductComponent implements OnInit{
   constructor(private dbService:DbServiceService){}
   ngOnInit(): void {
       this.dbService.getProoduct().subscribe(x=>{this.products=x;
-      this.menp=this.products.filter((x)=>x.category ==="Men");
+      this.menp=this.products.filter((x)=>x.category !=="Women");
+
     })
   }
 }

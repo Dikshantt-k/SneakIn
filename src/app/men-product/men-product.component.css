@@ -5,7 +5,20 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 .large-card {
-    width: 240px;      /* Adjust width to increase card size */
+  padding: 0px;
+    width: auto;      /* Adjust width to increase card size */
     height: auto;      /* Adjust height as needed */
       /* Optional: Add padding for more spacious look */
+  }
+  @media (max-width: 768px) {
+    .card-grid {
+      padding-right: 0px;
+      flex: 0 0 48%; /* Makes the item take up 48% of the width, creating two columns */
+      margin-right: 2%; /* Optional: adds space between the cards */
+    }
+  
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }

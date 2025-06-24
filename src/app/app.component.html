@@ -1,4 +1,4 @@
-<div *ngIf="showNavAndFooter">
+<!-- <div *ngIf="showNavAndFooter">
   <nav class="navbar navbar-expand-lg bg-body-tertiary ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">SneakIN</a>
@@ -13,8 +13,7 @@
           <a class="nav-link" [ngClass]="{ 'active': currentNav == 'men' }" (click)="selectednav('men')" routerLink="men">Men</a>
           <a class="nav-link" [ngClass]="{ 'active': currentNav == 'women' }" (click)="selectednav('women')" routerLink="women">Women</a>
           
-          <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
-          <button class="btn btn-primary" (click)="logout()">Logout</button> -->
+          
 
         </div>
 
@@ -52,7 +51,7 @@
               <mat-icon class="icon">
                 shopping_cart
               </mat-icon>
-              <!-- <span class="badge bg-dark">{{counter}}</span> -->
+             
             </a>
           </div>
         </div>
@@ -61,7 +60,9 @@
     </div>
 
   </nav>
-</div>
+</div>   -->
+
+<app-navbar></app-navbar>
 
 <router-outlet></router-outlet>
 

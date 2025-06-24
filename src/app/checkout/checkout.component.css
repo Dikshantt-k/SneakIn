@@ -13,9 +13,11 @@
     border-radius: 50px;
     width: 100%;
     padding: 10px;
+    background-color: black ;
 }
 .btn-rounded{
     padding: 8px;
     width: 200px;
     border-radius: 50px;
+    background-color: black;
 }

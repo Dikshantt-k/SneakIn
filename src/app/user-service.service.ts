@@ -6,8 +6,10 @@ import { User } from './user';
 @Injectable({
   providedIn: 'root'
 })
+// json-server db.json --host 192.168.0.116 --port 3000
+// run this command to seeit on mobile
 export class UserServiceService {
-  private url="http://192.168.0.108:3000/users"
+  private url="http://192.168.0.116:3000/users"
   constructor(private http:HttpClient) { }
   user:User[]=[]
 

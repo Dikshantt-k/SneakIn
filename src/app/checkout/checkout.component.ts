@@ -20,6 +20,8 @@ export class CheckoutComponent implements OnInit,DoCheck{
 cartUser:any={}
 cartItems:any[]=[]
 cartProducts:any[]=[]
+product:any[]=[]
+subtotal:any;
 total:any;
 item:{[productId:string]:{size:any}}={}
 products:{[productId:string]:{name:any; price:any; category: any; url:any;size:any}[]}={}
@@ -47,7 +49,7 @@ ngOnInit(): void {
   this.t=JSON.parse(this.t)
 
   this.cartService.getCartItem().subscribe(cartItem=>{
-    this.cartItems=cartItem.filter((x:any)=>x.coustomerId==this.t.id)
+    this.cartItems=cartItem.filter((x:any)=>x.customerId==this.t._id)
   })
 
   this.userService.getUser().subscribe(users=>{
@@ -97,7 +99,8 @@ ngOnInit(): void {
     
 }
 calculateTotal(): void {
-  this.total = this.cartItems.reduce((sum, product) => Number(sum) + Number(product.productPrice), 0);
+  this.subtotal = this.cartItems.reduce((sum, product) => Number(sum) + Number(product.productPrice), 0);
+  this.total=this.subtotal+450
 }
 
 addProduct(){
@@ -135,15 +138,16 @@ getProductentries(){
 
 
 
-
+deleteId:any
 deleteProductFromCart(id:any){
-  this.user.cartItem=this.user.cartItem.filter((item:any)=>item !== id)
+  this.deleteId=id
+  // this.user.cartItem=this.user.cartItem.filter((item:any)=>item !== id)
   this.cartProducts=this.cartProducts.filter((item:any)=>item !== id)
   
 
 
 
-  return this.cartService.deleteCartItem(id).subscribe(x=>this.ngOnInit())
+  return this.cartService.deleteProductFromCart(id).subscribe(x=>this.ngOnInit())
   
 
 }

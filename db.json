@@ -38,33 +38,78 @@
       "productSize": 3.5
     },
     {
-      "id": "9eea",
-      "coustomerId": "5c7b",
+      "id": "002d",
       "productId": "4776",
-      "productName": "Nike Dunk Low retro",
+      "productName": "Air Jordan Legacy 312 Low",
       "productPrice": "3500",
       "productCategory": "Men",
       "productUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b62ad0c4-ae84-4e35-9ec4-361c5973107f/AIR+JORDAN+LEGACY+312+LOW.png",
+      "productSize": 4
+    },
+    {
+      "id": "8d86",
+      "productId": "5b21",
+      "productName": "Ja 2 'Purple Sky' EP",
+      "productPrice": "10795",
+      "productCategory": "BaskateBall",
+      "productUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e1fe0707-2fa7-48be-a3a9-4f61e29a379d/JA+2+EP.png",
       "productSize": 7.5
+    },
+    {
+      "id": "ebe6",
+      "productId": "67e3",
+      "productName": "Tatum 2 PF 'Red Cement'",
+      "productPrice": "1500",
+      "productCategory": "BaskateBall",
+      "productUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cce5b5b3-34ee-408b-947f-be2950972b92/JORDAN+TATUM+2+PF.png",
+      "productSize": 5
+    },
+    {
+      "id": "6f4f",
+      "productId": "bade",
+      "productName": "Nike Blazer Mid '77 Vintage",
+      "productPrice": "7500",
+      "productCategory": "Men",
+      "productUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/68e31b88-19a5-435f-acc1-172b67e2f927/BLAZER+MID+%2777+PRM.png",
+      "productSize": 6.5
+    },
+    {
+      "id": "6b4f",
+      "productId": "4776",
+      "productName": "Air Jordan Legacy 312 Low",
+      "productPrice": "3500",
+      "productCategory": "Men",
+      "productUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b62ad0c4-ae84-4e35-9ec4-361c5973107f/AIR+JORDAN+LEGACY+312+LOW.png",
+      "productSize": 7
+    },
+    {
+      "id": "a2a5",
+      "coustomerId": "5c7b",
+      "productId": "4776",
+      "productName": "Air Jordan Legacy 312 Low",
+      "productPrice": "3500",
+      "productCategory": "Men",
+      "productUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b62ad0c4-ae84-4e35-9ec4-361c5973107f/AIR+JORDAN+LEGACY+312+LOW.png",
+      "productSize": 4.5
     }
   ],
   "products": [
     {
-      "name": "Nike red shoes",
+      "name": "Tatum 2 PF 'Red Cement'",
       "price": "1500",
-      "category": "Men",
+      "category": "BaskateBall",
       "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cce5b5b3-34ee-408b-947f-be2950972b92/JORDAN+TATUM+2+PF.png",
       "id": "67e3"
     },
     {
-      "name": "NIke blew",
+      "name": "Tatum 2 'Vortex' PF",
       "price": "4500",
       "category": "Men",
       "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c005f0ca-249c-4fec-b60e-96f98c8b7c61/JORDAN+TATUM+2+PF.png",
       "id": "b7be"
     },
     {
-      "name": "Nike Dunk Low retro",
+      "name": "Air Jordan Legacy 312 Low",
       "price": "3500",
       "category": "Men",
       "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b62ad0c4-ae84-4e35-9ec4-361c5973107f/AIR+JORDAN+LEGACY+312+LOW.png",
@@ -73,19 +118,19 @@
     {
       "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fd4a337e-51cf-46d1-9ef4-e2d41463c12d/AIR+FORCE+1+%2707+FRESH.png",
       "price": "1000",
-      "name": "Nike White shoe",
+      "name": "Nike Air Force 1 '07 Fresh",
       "category": "Men",
       "id": "6835"
     },
     {
       "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/057482ba-4077-40a4-aa18-ef8f1b8f4fcf/BLAZER+MID+%2777+VNTG.png",
-      "name": "nike blazer",
+      "name": "Nike Blazer Mid '77 Vintage",
       "price": "1200",
       "category": "Men",
       "id": "1f88"
     },
     {
-      "name": "Nike Green Blaze",
+      "name": "Nike Blazer Mid '77 Vintage",
       "price": "7500",
       "category": "Men",
       "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/68e31b88-19a5-435f-acc1-172b67e2f927/BLAZER+MID+%2777+PRM.png",
@@ -93,7 +138,7 @@
     },
     {
       "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0029ebe4-0ea3-4d8b-9e0d-b13ffa466165/NIKE+SB+ZOOM+BLAZER+MID.png",
-      "name": "Nike Go FlyEasy",
+      "name": "Nike SB Zoom Blazer Mid Electric",
       "price": "9000",
       "category": "Women",
       "id": "ff7b"
@@ -101,9 +146,73 @@
     {
       "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e039906f-d10e-49d2-a729-d2d55f0ebc97/NIKE+SB+ZOOM+BLAZER+LOW+PRO+GT.png",
       "price": "4500",
-      "name": "Nike SB chron",
+      "name": "Nike SB Check Canvas",
       "category": "Women",
       "id": "8824"
+    },
+    {
+      "id": "5b21",
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e1fe0707-2fa7-48be-a3a9-4f61e29a379d/JA+2+EP.png",
+      "name": "Ja 2 'Purple Sky' EP",
+      "price": "10795",
+      "category": "BaskateBall",
+      "subCategory": "BaskateBall"
+    },
+    {
+      "id": "f1c4",
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9b469d1c-aacb-43e7-8902-f801f5b85dc5/NIKE+PRECISION+VII.png",
+      "name": "Nike Precision 7",
+      "price": "5695",
+      "category": "BaskateBall"
+    },
+    {
+      "id": "8d48",
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d21df447-7723-408c-8439-36b7790a1098/GIANNIS+FREAK+6+EP.png",
+      "category": "BaskateBall",
+      "name": "Giannis Freak 6 EP",
+      "price": "11895"
+    },
+    {
+      "id": "459a",
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/586e0ba3-d2a3-4cf3-b4cb-e97dd18a9efa/G.T.+CUT+3+EP.png",
+      "name": "Nike G.T. Cut 3 EP",
+      "price": "17495",
+      "category": "BaskateBall"
+    },
+    {
+      "id": "a6c1",
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9afb869d-fa7c-41d3-81dc-58f07599c2d3/NIKE+SB+JANOSKI%2B+SLIP.png",
+      "price": "7495",
+      "name": "Nike SB Janoski+ Slip",
+      "category": "Skateboard"
+    },
+    {
+      "id": "8189",
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0608afa3-02cc-4ccd-ae5a-660ae345bac4/NIKE+SB+FORCE+58+PRM+L.png",
+      "name": "Nike SB Force 58 Premium",
+      "price": "7095",
+      "category": "Skateboard"
+    },
+    {
+      "id": "359e",
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d3affd47-dd10-49fb-9e48-6de5cf42b6ac/ZM+SUPERFLY+10+ELITE+SE+FG.png",
+      "name": "Nike Mercurial Superfly 10 Elite SE",
+      "price": "28295",
+      "category": "Football"
+    },
+    {
+      "id": "9a6a",
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ca52989d-a4ff-49fb-9b70-e7eb735389e6/PHANTOM+GX+II+ELITE+AG-PRO.png",
+      "name": "Nike Phantom GX 2 Elite",
+      "price": "21995",
+      "category": "Football"
+    },
+    {
+      "id": "2417",
+      "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc4622c4-2769-4665-aa6e-42c974a7705e/AIR+FORCE+1+%2707.png",
+      "name": "Nike Air Force 1 '07",
+      "price": "7495",
+      "category": "Men"
     }
   ]
 }

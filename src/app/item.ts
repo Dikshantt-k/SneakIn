@@ -1,5 +1,5 @@
 export class Item {
-    coustomerId:any;
+    customerId:any;
     productId:any;
     productName:any;
     productPrice:any;

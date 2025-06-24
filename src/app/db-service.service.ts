@@ -6,8 +6,10 @@ import { observableToBeFn } from 'rxjs/internal/testing/TestScheduler';
 @Injectable({
   providedIn: 'root'
 })
+// json-server db.json --host 192.168.0.116 --port 3000
+//ng serve --host 0.0.0.0
 export class DbServiceService {
-  private url="http://192.168.0.108:3000/products"
+  private url="http://192.168.0.116:3000/products"
   constructor(private http:HttpClient) { }
 
   getProoduct():Observable<any>{
@@ -29,4 +31,5 @@ export class DbServiceService {
   getProductById(id:any):Observable<any>{
     return this.http.get(this.url+"/"+id)
   }
+
 }

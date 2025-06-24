@@ -36,6 +36,26 @@
      height: auto;
       
     }
+  
+      @media (max-width: 768px) {
+      .sports-category{
+        width: 100%;
+      }
+      .card-grid {
+        padding-right: 0px;
+        flex: 0 0 48%; /* Makes the item take up 48% of the width, creating two columns */
+        margin-right: 2%; /* Optional: adds space between the cards */
+        
+      }
+    
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        
+      }
+    }
+     
+    
     .pagination{
         justify-content: end;
         text-align: center;
@@ -47,9 +67,11 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .large-card {
-      width: 240px;      /* Adjust width to increase card size */
+      padding: 0px;
+      width: auto;      /* Adjust width to increase card size */
       height: auto;      /* Adjust height as needed */
         /* Optional: Add padding for more spacious look */
+
     }
 .btn-pagination{
   width: 50px;
@@ -63,10 +85,47 @@ display: flex;
 justify-content: end;
 margin-right: 3%;
 margin-top: 10px;
+
+}
+.kickHeader h1{
+  font-size: 50px;
+  margin-top: 20px;
+  font-weight:bolder;
+}
+.kickHeader h6{
+  font-weight: 300;
+}
+.btn-shopkicks{
+  margin-top: 15px;
+  max-width: fit-content;
+  border-radius: 50px;
+  background-color: black;
+}
+.categoryImage img{
+  width: 50px;
+  height: auto;
+  margin-bottom: 40px;
+  margin-left: 0px;
+  padding: 10px;
+}
+.btn-rounded{
+  max-width: fit-content;
+  border-radius: 50px;
 }
 
 .mat-icon{
   padding:1px;
   margin-left: 4px;
   margin-top: 3px;
+}
+.videoabc{
+
+max-width: 100%;
+height: auto;
+
+}
+
+
+.video{
+  display: flex;
 }

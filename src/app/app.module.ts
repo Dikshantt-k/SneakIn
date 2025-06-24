@@ -21,6 +21,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatOptionModule } from '@angular/material/core';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FootballSectionComponent } from './football-section/football-section.component';
+import { BasketballSectionComponent } from './basketball-section/basketball-section.component';
+import { SkateboardSectionComponent } from './skateboard-section/skateboard-section.component';
+
+
+
 
 
 
@@ -31,7 +38,8 @@ import { MatOptionModule } from '@angular/material/core';
     PaymentsComponent,
     SignupComponent,
     LoginComponent,
- 
+    NavbarComponent,
+
    
   ],
   imports: [
@@ -47,6 +55,9 @@ import { MatOptionModule } from '@angular/material/core';
     WomenProductComponent,
     MenProductComponent,
     FooterComponent,
+    FootballSectionComponent,
+    BasketballSectionComponent,
+    SkateboardSectionComponent,
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,

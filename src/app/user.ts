@@ -7,7 +7,7 @@ export class User {
         public password:string,
         public cartItem:(any|any)[][],
         public item: { [productId: string]:{size: any }[]}={} ,
-        public id?:any
+        public _id?:any
 
     ){}
 }

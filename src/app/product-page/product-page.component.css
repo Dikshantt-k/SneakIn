@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 img{
     border-radius: 1%;
+    max-width: 100%;
 }
 .tax{
     font-size: 14px;
@@ -10,7 +11,7 @@ img{
 }
 
 .chart{
-    width: 450px;
+    max-width:100%;
     margin: 10px;
 
 }
@@ -24,7 +25,8 @@ img{
     margin: 5px;
 }
 .btn-rounded{
-    width: 92%;
+    background-color: black;
+    width: 95%;
     border-radius: 50px;
     margin-top: 25px;
     padding: 13px;

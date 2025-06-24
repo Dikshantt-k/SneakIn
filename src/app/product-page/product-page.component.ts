@@ -24,6 +24,7 @@ export class ProductPageComponent  implements OnInit,OnChanges{
   t:any
   user:User=new User("","","","",[],{})
   size:any;
+  modalSize:any;
 cartItem:Item=new Item()
 
   //item:{[productId:string]:{size:any}[]}={}
@@ -40,10 +41,15 @@ ngOnChanges(changes: SimpleChanges): void {
     this.t=JSON.parse(this.t)
 
     this.userService.getUser().subscribe(user=>{
-      this.user=user.find((x:any)=>x.id==this.t.id)
+      this.user=user.find((x:any)=>x._id==this.t._id)
     })
 
-    let productId=this.rout.snapshot.paramMap.get('id')
+    let productId=this.rout.snapshot.paramMap.get('_id')
+    let snap_shot=this.rout.snapshot.paramMap
+    console.log(productId)
+    console.log(snap_shot)
+    let rout=this.rout.snapshot
+    console.log(rout)
     this.id=productId
     this.product=this.dbService.getProductById(productId).subscribe(x=>this.product=x);
     this.category=this.product?.category
@@ -51,7 +57,7 @@ ngOnChanges(changes: SimpleChanges): void {
   }
   addProductTocart(id:any){
     this.cartItem={
-      coustomerId:this.user?.id,
+      customerId:this.user?._id,
       productId:id,
       productName:this.product?.name,
       productPrice:this.product?.price,
@@ -60,16 +66,18 @@ ngOnChanges(changes: SimpleChanges): void {
       productSize:this.size
     }
     this.cartService.postCartItem(this.cartItem).subscribe(x=>{this.ngOnInit();
-      this.cartItem={
-        coustomerId:"",
-        productId:"",
-        productName:"",
-        productPrice:"",
-        productCategory:"",
-        productUrl:"",
-        productSize:""
-      }
+      // this.cartItem={
+      //   customerId:"",
+      //   productId:"",
+      //   productName:"",
+      //   productPrice:"",
+      //   productCategory:"",
+      //   productUrl:"",
+      //   productSize:""
+      // }
     })
+    this.modalSize=this.size
+    this.size=null
     }
     erroralert(){
       alert(

@@ -26,7 +26,10 @@ export class AuthServiceService implements OnInit {
     if (this.user) {
       let u = JSON.stringify(this.user);
       localStorage.setItem('user', u);
-      this.router.navigate([""]);
+      this.router.navigateByUrl('')
+    //   this.router.navigateByUrl('/navbar', { skipLocationChange: true }).then(() => {
+    //     this.router.navigate(['']);
+    // }); 
     } else {
       alert("wrong credentials");
     }

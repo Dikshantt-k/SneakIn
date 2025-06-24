@@ -1,0 +1,26 @@
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-md">
+            <h1>BaskateBall Shoe's</h1>
+        </div>
+    </div>
+
+    <div class="row "  >
+      <div class="col-md-2  my-2  card-grid" *ngFor="let p of baskateballShoes;let i =index">
+       <a [routerLink]="['product', p.id]" class="card-link text-decoration-none">
+        <div class="card large-card border-0">
+          <img class="card-img-top" src="{{p.url}}" alt="Title" />
+          <div class="card-body" style="max-width: fit-content;">
+            <h6 class="card-title" style="font-size: 16px;">{{p.name}}</h6>
+            <h6 class="mt-0 text-black-50">{{p.category}}'s shoes</h6>
+            <p class="card-text">MRP : ₹ {{p.price}}</p>
+            <p class="card-text">MRP : ₹ {{p.id}}</p>
+
+            
+            
+          </div>
+        </div>
+      </a> 
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,106 @@
+
+@media(max-width: 800px){
+
+  
+.userdata{
+margin-left: auto;
+}
+.navbar-nav{
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px; /* Place content 60px from the top */
+  transition:all 0.2s ; /* 0.5 second transition effect to slide in the sidenav */
+}
+.navbar-collapse{
+  position: absolute;
+} 
+
+
+ /* .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+} */
+}
+.navbar-collapse{
+  justify-content: center;
+}
+.borderless-btn{
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  
+
+  }
+/* .borderless-btn:hover,
+.borderless-btn:focus {
+  border: none;
+  box-shadow: none; 
+} */
+  .dropdown-menu {
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 200px; 
+    overflow-y: auto;
+  }
+
+  /* .center-nav {
+    display: flex;
+    justify-content: center;
+     /* Ensures it takes up the available space 
+  } */
+
+ 
+
+  .active{
+    color: blue;
+    font-weight: bold;
+  }
+
+.icon{
+  padding: 20%;
+  width: 40px;
+  height: 40px;
+  font-size:20px;
+  color: rgb(17, 14, 14);
+  opacity: 80%;
+  margin-top: 5px;
+
+}
+.text{
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+.btn{
+ 
+  border-radius: 25px;
+  margin-top: 5px;
+}
+.cartItem{
+  display: flex;
+  justify-content: end;
+}
+.navbar{
+  padding: 0%;
+}
+/* .dropdown{
+margin-top: 5%;
+} */
+.login{
+  margin-top: 16px;
+  text-align: center;
+  text-decoration: none;
+  color:rgb(17, 14, 14) ;
+}
+/* .navbar-collapse{
+  margin-left: 41%;
+}  */
+
